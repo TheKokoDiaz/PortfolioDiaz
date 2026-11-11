@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+aside, header, main, section, footer{
+    padding: 1rem;
+}
+
+#profiles{
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    
+    h1{
+        width: 100%;
+        margin: 0;
+    }
+    
+    .profile{
+        width: calc(50% - 0.5rem);
+        height: auto;
+        color: black;
+        text-decoration: none;
+        border: 1px solid black;
+        border-radius: 16px;
+
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        padding: 0 1rem;
+
+        img{
+            width: 64px;
+            height: 64px;
+            aspect-ratio: 1/1;
+        }
+
+        p{font-style: italic;}
+    }
+
+    .extend{
+        width: 100%;
+    }
+}
