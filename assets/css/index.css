@@ -32,13 +32,13 @@ aside, header, main, section, footer{
         text-decoration: none;
         border: 1px solid black;
         border-radius: 16px;
-
+        
         display: flex;
         align-items: center;
         gap: 1rem;
 
         padding: 0 1rem;
-
+        
         img{
             width: 64px;
             height: 64px;
@@ -47,8 +47,43 @@ aside, header, main, section, footer{
 
         p{font-style: italic;}
     }
-
+    
     .extend{
         width: 100%;
+    }
+}
+
+#contact{
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    gap: 1rem;
+
+    h1{
+        width: 100%;
+        margin: 0;
+    }
+    
+    a{
+        width: auto;
+        aspect-ratio: 1/1;
+        color: black;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        border: 1px solid black;
+
+        display: flex;
+        align-items: center;
+
+        padding: 0.5rem 1rem;
+
+        svg{
+            fill: black;
+            stroke: black;
+        }
     }
 }
