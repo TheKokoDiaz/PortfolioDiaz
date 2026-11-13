@@ -10,7 +10,14 @@ html, body{
 }
 
 aside, header, main, section, footer{
-    padding: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+#introduction{
+    p{
+        text-align: justify;
+        margin-bottom: 0;
+    }
 }
 
 #projectCatalogue{
@@ -117,7 +124,7 @@ aside, header, main, section, footer{
     
     h1{
         width: 100%;
-        margin: 0;
+        margin-bottom: 0;
     }
     
     .profile{
@@ -159,7 +166,7 @@ aside, header, main, section, footer{
 
     h1{
         width: 100%;
-        margin: 0;
+        margin-bottom: 0;
     }
     
     a{
