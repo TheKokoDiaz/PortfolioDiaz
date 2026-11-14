@@ -16,26 +16,38 @@
 </head>
 <body>
     <aside>
-        <h1>Julio Vázquez</h1>
+        <header>
+            <h1>Julio Alfredo Vázquez Díaz</h1>
+            
+            <select name="pageLanguage" id="pageLanguage" onchange="changeLanguage(this)">
+                <option value="ES">ES</option>
+                <option value="EN">EN</option>
+            </select>
 
-        <select name="pageLanguage" id="pageLanguage" onchange="changeLanguage(this)">
-            <option value="ES">ES</option>
-            <option value="EN">EN</option>
-        </select>
+            <button onclick="showNavScreen()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#e3e3e3"><path d="M20,33.33q-1.01,0-1.73-0.72t-0.72-1.73t0.72-1.73T20,28.44t1.73,0.72t0.72,1.73t-0.72,1.73T20,33.33Zm0-10.89q-1.01,0-1.73-0.72T17.56,20t0.72-1.73T20,17.56t1.73,0.72T22.44,20t-0.72,1.73T20,22.44Zm0-10.89q-1.01,0-1.73-0.72T17.56,9.11t0.72-1.73T20,6.67t1.73,0.72t0.72,1.73t-0.72,1.73T20,11.56Z"/></svg>
+            </button>
+        </header>
 
-        <a href="#introduction">Introducción</a>
-        <a href="#projectCatalogue">Proyectos</a>
-        <a href="#skills">Habilidades</a>
-        <a href="#profiles">Perfiles</a>
-        <a href="#contact">Contacto</a>
+        <nav id="navigationScreen">
+            <button onclick="closeNavScreen()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" height="40px" width="40px" fill="#e3e3e3"><path d="M13,28.94L11.06,27l7-7l-7-6.96L13,11.1l7,7l6.96-7l1.94,1.94L21.9,20l7,7l-1.94,1.94l-6.96-7l-7,7Z"/></svg>
+            </button>
+
+            <a onclick="closeNavScreen()" href="#introduction">Sobre mí</a>
+            <a onclick="closeNavScreen()" href="#projectCatalogue">Proyectos</a>
+            <a onclick="closeNavScreen()" href="#skills">Habilidades</a>
+            <a onclick="closeNavScreen()" href="#profiles">Perfiles</a>
+            <a onclick="closeNavScreen()" href="#contact">Contacto</a>
+        </nav>
     </aside>
 
-    <header id="introduction">
-        <h1>Julio Alfredo Vázquez Díaz</h1>
+    <section id="introduction">
+        <h1>Sobre mí</h1>
         <p>
             Estudiante de Ingeniería en Tecnologías de la Información con interés en el desarrollo de software, Big Data e Inteligencia Artificial. A lo largo de mi formación académica he participado en proyectos relacionados con programación, aprendizaje automático, desarrollo web y electrónica. Disfruto explorar nuevas tecnologías, adquirir conocimientos de manera autónoma y transformar ideas en proyectos funcionales.
         </p>
-    </header>
+    </section>
 
     <main id="projectCatalogue">
         <h1>Proyectos</h1>

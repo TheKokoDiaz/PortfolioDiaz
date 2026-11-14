@@ -1,3 +1,6 @@
+// DOM Elements
+const navigationScreen = document.getElementById('navigationScreen');
+
 // Changes the index page at choosing a different language
 function changeLanguage(pageLanguage){
     if(pageLanguage.value == 'ES'){
@@ -7,6 +10,15 @@ function changeLanguage(pageLanguage){
     if(pageLanguage.value == 'EN'){
         window.location.href = 'index.html';
     }
+}
+
+// Close / Show teh navigation screen
+function closeNavScreen(){
+    navigationScreen.style.display = 'none';
+}
+
+function showNavScreen(){
+    navigationScreen.style.display = 'flex';
 }
 
 // Write current year in footer
