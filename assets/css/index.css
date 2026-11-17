@@ -442,3 +442,14 @@ aside{
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    body{
+        padding: 1rem calc((100vw - 1112px) / 2);
+    }
+
+    aside{
+        width: 480px;
+        left: calc((100vw - 1112px) / 2);
+    }
+}
