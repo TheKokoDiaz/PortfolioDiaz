@@ -358,6 +358,19 @@ aside{
     }
 }
 
+footer{
+    p{
+        opacity: 50%;
+        font-style: italic;
+    }
+    
+    #author{
+        opacity: 100%;
+        font-weight: bold;
+        text-align: end;
+    }
+}
+
 /* Query for Phones */
 @media screen and (max-width: 600px) {
     :root{
