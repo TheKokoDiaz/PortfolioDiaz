@@ -402,7 +402,8 @@ aside{
         width: calc(100vw - 600px - 3rem);
         border-radius: var(--rad);
 
-        top: 30vh;
+        top: 50%;
+        transform: translateY(-50%);
         left: 1rem;
 
         position: fixed;
