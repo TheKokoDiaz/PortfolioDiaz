@@ -36,12 +36,15 @@ aside{
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+
+            flex-grow: 1;
         }
 
         select{
             border: none;
             border-radius: 16px;
 
+            margin-right: 1rem;
             padding: 0.25rem 0.5rem;
             cursor: pointer;
         }
