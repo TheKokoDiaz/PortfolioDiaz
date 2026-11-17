@@ -12,13 +12,21 @@ function changeLanguage(pageLanguage){
     }
 }
 
-// Close / Show teh navigation screen
+// Close / Show the navigation screen
 function closeNavScreen(){
     navigationScreen.style.display = 'none';
 }
 
 function showNavScreen(){
     navigationScreen.style.display = 'flex';
+}
+
+// Changes the main image of a project
+function changeImg(id, imgPath){
+    const mainImg = document.getElementById(id);
+    const assetsPath = 'assets/img/';
+
+    mainImg.src = assetsPath + imgPath;
 }
 
 // Write current year in footer

@@ -1,3 +1,7 @@
+:root{
+    --primary: rgb(150, 50, 50);
+}
+
 *{
     box-sizing: border-box;
 
@@ -168,6 +172,11 @@ aside{
                 img {
                     width: 100%;
                     border-radius: 16px;
+                    cursor: pointer;
+                }
+
+                img:hover{
+                    border: 2px solid var(--primary);
                 }
             }
         }
