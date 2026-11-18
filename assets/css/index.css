@@ -3,6 +3,8 @@
     --secondary: #b51224;
 
     --text: white;
+
+    --btnHover: rgba(255, 255, 255, 0.16);
     
     --rad: 16px;
 }
@@ -70,13 +72,13 @@ aside{
             margin-right: 1rem;
             padding: 0.25rem 0.5rem;
             color: var(--text);
-            background-color: #5b1020;
+            background-color: var(--primary);
             cursor: pointer;
         }
 
         select option{
             color: var(--text);
-            background-color: #5b1020;
+            background-color: var(--primary);
         }
     }
 
@@ -120,7 +122,11 @@ aside{
         }
 
         a:hover{
-            background-color: rgba(255, 255, 255, 0.16);
+            background-color: var(--btnHover);
+        }
+
+        a:active{
+            background-color: var(--primary);
         }
     }
 
@@ -139,7 +145,11 @@ aside{
         }
 
         a:hover{
-            background-color: rgba(255, 255, 255, 0.16);
+            background-color: var(--btnHover);
+        }
+
+        a:active{
+            background-color: var(--primary);
         }
     }
 
@@ -147,7 +157,7 @@ aside{
         border: none;
         aspect-ratio: 1/1;
         border-radius: 50%;
-        background-color: rgba(255, 255, 255, 0.16);
+        background-color: transparent;
         
         cursor: pointer;
         
@@ -155,6 +165,10 @@ aside{
             fill: white;
             stroke: white;
         }
+    }
+    
+    button:hover{
+        background-color: var(--btnHover);
     }
 }
 
@@ -226,10 +240,15 @@ aside{
                     width: 100%;
                     border-radius: var(--rad);
                     cursor: pointer;
+                    border: 2px solid transparent;
                 }
 
                 img:hover{
-                    border: 2px solid var(--primary);
+                    border-color: white;
+                }
+
+                img:active{
+                    opacity: 80%;
                 }
             }
         }
@@ -361,17 +380,22 @@ aside{
         text-align: center;
         text-decoration: none;
         border-radius: 50%;
-        border: 1px solid white;
-
+        border: 1px solid transparent;
+        
         display: flex;
         align-items: center;
-
+        
         padding: 0.5rem 1rem;
-
+        
         svg{
             fill: white;
             stroke: white;
         }
+    }
+    
+    a:hover{
+        background-color: var(--btnHover);
+        border-color: white;
     }
 }
 
