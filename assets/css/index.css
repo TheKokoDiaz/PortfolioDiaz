@@ -7,6 +7,7 @@
     --btnHover: rgba(255, 255, 255, 0.16);
     
     --rad: 16px;
+    --transition: 200ms;
 }
 
 *{
@@ -336,7 +337,6 @@ aside{
         height: auto;
         color: inherit;
         text-decoration: none;
-        border: 1px solid white;
         border-radius: var(--rad);
         
         display: flex;
@@ -356,6 +356,21 @@ aside{
     
     .extend{
         width: 100%;
+    }
+
+    .linkedin{
+        /* icon's color: #007ab9 */
+        background: linear-gradient(to top right, transparent, #007ab9) fixed;
+    }
+
+    .github{
+        /* icon's color: #000000 */
+        background: linear-gradient(to top right, transparent, #000000) fixed;
+    }
+
+    .hackerrank{
+        /* icon's color: #2dc160 */
+        background: linear-gradient(to top right, transparent, #2dc160) fixed;
     }
 }
 
