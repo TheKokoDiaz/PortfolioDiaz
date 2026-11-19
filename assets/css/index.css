@@ -270,7 +270,7 @@ aside{
         .technicalSkills{
             width: calc(50% - 0.25rem);
             border-radius: var(--rad);
-            border: 1px solid white;
+            background-color: var(--btnHover);
             padding: 0.25rem 1rem;
         }
 
@@ -287,7 +287,7 @@ aside{
         .personalSkills{
             width: calc(50% - 0.25rem);
             border-radius: var(--rad);
-            border: 1px solid white;
+            background-color: var(--btnHover);
             padding: 0.25rem 1rem;
         }
     }
