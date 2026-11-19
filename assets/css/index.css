@@ -184,9 +184,9 @@ aside{
     .project{
         .usedTechs{
             .tech{
-                border: 1px solid white;
                 border-radius: 18px;
-                padding: 0.1rem 0.4rem;
+                background-color: var(--btnHover);
+                padding: 0.1rem 0.8rem;
             }
             
         }
