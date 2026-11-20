@@ -254,6 +254,18 @@ aside{
             }
         }
 
+        .soloImage{
+            width: 100%;
+            
+            canvas {
+                width: 100%;
+                border-radius: var(--rad);
+                background-color: var(--btnHover);
+
+                image-rendering: pixelated;
+                padding: 1rem;
+            }
+        }
     }
 }
 
