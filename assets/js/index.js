@@ -1,6 +1,7 @@
-// DOM Elements
+//+ DOM ELEMENTS
 const navigationScreen = document.getElementById('navigationScreen');
 
+//+ FUNCTIONS
 // Changes the index page at choosing a different language
 function changeLanguage(pageLanguage){
     if(pageLanguage.value == 'ES'){
