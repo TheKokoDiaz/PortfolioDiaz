@@ -6,6 +6,9 @@ let frameX = 0;
 let frameY = 0;
 let isInfinite = false;
 let animationLimit = 5;
+let currentAnimation = 0;
+let animationPositions = [0, 1, 2, 3, 0, 0, 8];
+let animationLimits = [5, 5, 4, 7, 5, 5, 8];
 
 const canvas = document.getElementById('karmaSprite');
 const ctx = canvas.getContext('2d');
@@ -20,7 +23,7 @@ const spriteHeight = spritesheet_height;
 let lastTime = 0;
 let frame = 0;
 let straggerFrames = 0;
-let speedAnimation = 1/6;
+let speedAnimation = 1/11;
 
 //+ FUNCTIONS
 function playerDeltaTime(playerCurrentTime) {
@@ -39,14 +42,19 @@ function playerAnimation(deltaTime) {
     // Animation
     straggerFrames += deltaTime;
     if (straggerFrames >= speedAnimation) {
-        if(frameX < (animationLimit - 1)){
+
+        if(frameX < (animationLimits[currentAnimation] - 1)){
             frameX++;
         } else {
-            // Cycling animations
-            if(isInfinite == true){
-                frameX = 0;
-            } else {
-                frameX = 0;
+            // Animation sequence
+            frameX = 0;
+            currentAnimation++;
+            frameY = animationPositions[currentAnimation];
+
+            // Check if the animation should loop back to the start
+            if(currentAnimation >= animationLimits.length){
+                currentAnimation = 0;
+                frameY = 0;
             }
         }
 
