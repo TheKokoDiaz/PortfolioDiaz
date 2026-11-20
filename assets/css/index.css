@@ -58,6 +58,14 @@ aside{
         justify-content: space-between;
         gap: 0.5rem;
 
+        .profile{
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 1rem;
+        }
+
         h1{
             overflow: hidden;
             text-overflow: ellipsis;
@@ -498,6 +506,13 @@ footer{
 
             align-items: start;
             flex-direction: column;
+
+            .profile{
+                width: 50%;
+                height: 50%;
+                margin-right: 0;
+                border-radius: var(--rad);
+            }
 
             h1{
                 overflow: visible;
